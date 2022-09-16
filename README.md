@@ -22,3 +22,5 @@ npx hardhat run scripts/flashloan_deploy.js --network localfork
 npx hardhat run scripts/flashloan_run.js --network localfork
 ```
 
+**加入Discord社区，讨论开发遇到的问题，一起做开源项目:** [https://discord.gg/vujpgYnwWk](https://discord.gg/vujpgYnwWk)
+
