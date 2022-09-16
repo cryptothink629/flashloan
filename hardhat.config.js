@@ -2,15 +2,24 @@ require("@nomicfoundation/hardhat-toolbox");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-    solidity: "0.8.10",
+    solidity: {
+        compilers: [
+            {
+                version: "0.8.10",
+            },
+            {
+                version: "0.6.6",
+            }
+        ]
+    },
     networks: {
         hardhat: {
             forking: {
-                url: "https://polygon-mainnet.g.alchemy.com/v2/***",
+                url: "http://localhost:9545",
             }
         },
-      localfork: {
-        url: "http://127.0.0.1:10545"
+      localhost: {
+        url: "http://127.0.0.1:7545"
       }
     }
 };
